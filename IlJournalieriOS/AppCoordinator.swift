@@ -12,7 +12,7 @@ class AppCoordinator {
     var dashCoordinator: DashboardCoordinator?
 
     func start() {
-        let dashCoordinator = DashboardCoordinator(window: window)
+        let dashCoordinator = DashboardCoordinator(window: window, di: di)
         self.dashCoordinator = dashCoordinator
 
         dashCoordinator.start()

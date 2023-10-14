@@ -19,6 +19,12 @@
 		A3E202EA2ADAAD0E001D920F /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202E92ADAAD0E001D920F /* CoreDataService.swift */; };
 		A3E202ED2ADAAD31001D920F /* IlJournalieriOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3E202EB2ADAAD31001D920F /* IlJournalieriOS.xcdatamodeld */; };
 		A3E202EF2ADAAD74001D920F /* DIContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202EE2ADAAD74001D920F /* DIContext.swift */; };
+		A3E202F12ADAB093001D920F /* MoreMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202F02ADAB093001D920F /* MoreMessageService.swift */; };
+		A3E202F32ADAB103001D920F /* ErrorChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202F22ADAB103001D920F /* ErrorChain.swift */; };
+		A3E202F52ADAB162001D920F /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202F42ADAB162001D920F /* DateService.swift */; };
+		A3E202F72ADAB241001D920F /* MoreMessageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202F62ADAB241001D920F /* MoreMessageStorage.swift */; };
+		A3E202F92ADAB691001D920F /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202F82ADAB691001D920F /* DashboardPresenter.swift */; };
+		A3E202FD2ADAB727001D920F /* MainThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202FC2ADAB727001D920F /* MainThread.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		A3E202E92ADAAD0E001D920F /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		A3E202EC2ADAAD31001D920F /* IlJournalieriOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IlJournalieriOS.xcdatamodel; sourceTree = "<group>"; };
 		A3E202EE2ADAAD74001D920F /* DIContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContext.swift; sourceTree = "<group>"; };
+		A3E202F02ADAB093001D920F /* MoreMessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreMessageService.swift; sourceTree = "<group>"; };
+		A3E202F22ADAB103001D920F /* ErrorChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorChain.swift; sourceTree = "<group>"; };
+		A3E202F42ADAB162001D920F /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
+		A3E202F62ADAB241001D920F /* MoreMessageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreMessageStorage.swift; sourceTree = "<group>"; };
+		A3E202F82ADAB691001D920F /* DashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		A3E202FC2ADAB727001D920F /* MainThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainThread.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +126,7 @@
 			children = (
 				A3E202DB2ADAA003001D920F /* DashboardViewController.swift */,
 				A3E202E02ADAA470001D920F /* DashboardCoordinator.swift */,
+				A3E202F82ADAB691001D920F /* DashboardPresenter.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -140,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				A3E202E62ADAA605001D920F /* UIColor+hex.swift */,
+				A3E202F22ADAB103001D920F /* ErrorChain.swift */,
+				A3E202FC2ADAB727001D920F /* MainThread.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -147,11 +162,30 @@
 		A3E202E82ADAAD06001D920F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A3E202E92ADAAD0E001D920F /* CoreDataService.swift */,
-				A3E202EB2ADAAD31001D920F /* IlJournalieriOS.xcdatamodeld */,
+				A3E202FB2ADAB6F6001D920F /* MoreMessage */,
+				A3E202FA2ADAB6EB001D920F /* CoreData */,
 				A3E202EE2ADAAD74001D920F /* DIContext.swift */,
+				A3E202F42ADAB162001D920F /* DateService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		A3E202FA2ADAB6EB001D920F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A3E202E92ADAAD0E001D920F /* CoreDataService.swift */,
+				A3E202EB2ADAAD31001D920F /* IlJournalieriOS.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A3E202FB2ADAB6F6001D920F /* MoreMessage */ = {
+			isa = PBXGroup;
+			children = (
+				A3E202F02ADAB093001D920F /* MoreMessageService.swift */,
+				A3E202F62ADAB241001D920F /* MoreMessageStorage.swift */,
+			);
+			path = MoreMessage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,13 +284,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E202F72ADAB241001D920F /* MoreMessageStorage.swift in Sources */,
+				A3E202F12ADAB093001D920F /* MoreMessageService.swift in Sources */,
 				A3E202EA2ADAAD0E001D920F /* CoreDataService.swift in Sources */,
 				A3E202EF2ADAAD74001D920F /* DIContext.swift in Sources */,
+				A3E202F52ADAB162001D920F /* DateService.swift in Sources */,
 				A3E202DE2ADAA414001D920F /* AppCoordinator.swift in Sources */,
 				A3E202E12ADAA470001D920F /* DashboardCoordinator.swift in Sources */,
+				A3E202F32ADAB103001D920F /* ErrorChain.swift in Sources */,
 				A3E202C62ADA9FA2001D920F /* AppDelegate.swift in Sources */,
 				A3E202E72ADAA605001D920F /* UIColor+hex.swift in Sources */,
+				A3E202FD2ADAB727001D920F /* MainThread.swift in Sources */,
 				A3E202DC2ADAA003001D920F /* DashboardViewController.swift in Sources */,
+				A3E202F92ADAB691001D920F /* DashboardPresenter.swift in Sources */,
 				A3E202E42ADAA548001D920F /* StylishField.swift in Sources */,
 				A3E202ED2ADAAD31001D920F /* IlJournalieriOS.xcdatamodeld in Sources */,
 			);

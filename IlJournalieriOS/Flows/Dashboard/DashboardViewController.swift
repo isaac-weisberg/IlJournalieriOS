@@ -1,8 +1,18 @@
 import UIKit
 
 class DashboardViewController: UIViewController {
+    let presenter: IDashboardPresenter
     let logSomethingLabel = UILabel(frame: .zero)
     let logMoreField = StylishField()
+
+    init(presenter: IDashboardPresenter) {
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,5 +38,18 @@ class DashboardViewController: UIViewController {
             make.top.equalTo(logSomethingLabel.snp.bottom).offset(8)
             make.leading.trailing.equalToSuperview().inset(16)
         }
+    }
+}
+
+extension DashboardViewController: IDashboardPresenterDelegate {
+    func clearMoreMessageInput() {
+        logMoreField.field.text = ""
+    }
+
+    func showAlert(_ msg: String) {
+        let alertController = UIAlertController(title: msg, message: nil, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default))
+
+        present(alertController, animated: true)
     }
 }

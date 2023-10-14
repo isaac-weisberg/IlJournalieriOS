@@ -7,7 +7,7 @@ class StylishField: UIView {
     init() {
         super.init(frame: .zero)
         
-        bottomLiveView.backgroundColor = UIColor(hex: 0xFFD662)
+        bottomLiveView.backgroundColor = UIColor.niceYellow
 
         field.font = UIFont.systemFont(ofSize: 24, weight: .regular)
         self.addSubview(field)

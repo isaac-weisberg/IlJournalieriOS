@@ -4,6 +4,7 @@ class DashboardViewController: UIViewController {
     let presenter: IDashboardPresenter
     let logSomethingLabel = UILabel(frame: .zero)
     let logMoreField = StylishField()
+    let logMoreButton = StylishButton(text: "Log")
 
     init(presenter: IDashboardPresenter) {
         self.presenter = presenter
@@ -37,6 +38,17 @@ class DashboardViewController: UIViewController {
         logMoreField.snp.makeConstraints { make in
             make.top.equalTo(logSomethingLabel.snp.bottom).offset(8)
             make.leading.trailing.equalToSuperview().inset(16)
+        }
+
+        view.addSubview(logMoreButton)
+        logMoreButton.snp.makeConstraints { make in
+            make.top.equalTo(logMoreField.snp.bottom).offset(16)
+            make.trailing.equalToSuperview().offset(-16)
+        }
+
+        logMoreButton.onTap = { [weak self] in
+            guard let self else { return }
+            self.presenter.addMoreMessage(self.logMoreField.field.text)
         }
     }
 }

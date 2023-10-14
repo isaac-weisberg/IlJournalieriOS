@@ -5,7 +5,7 @@ protocol IDashboardPresenterDelegate: AnyObject {
 }
 
 protocol IDashboardPresenter {
-    func addMoreMessage(_ msg: String)
+    func addMoreMessage(_ msg: String?)
 }
 
 class DashboardPresenter: IDashboardPresenter {
@@ -18,7 +18,11 @@ class DashboardPresenter: IDashboardPresenter {
         self.moreMessageService = moreMessageService
     }
 
-    func addMoreMessage(_ msg: String) {
+    func addMoreMessage(_ msg: String?) {
+        guard let msg, !msg.isEmpty else {
+            delegate?.showAlert("Message must not be empty")
+            return
+        }
         moreMessageService.addMoreMessage(msg) { [weak self] result in
             mainThread {
 

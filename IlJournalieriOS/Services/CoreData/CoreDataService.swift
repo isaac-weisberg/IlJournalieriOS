@@ -22,25 +22,30 @@ class CoreDataService: ICoreDataService {
         self.container = container
     }
 
-    func performTransaction(
-        _ block: @escaping (NSManagedObjectContext) throws -> Void,
-        completion: @escaping (Result<Void, ErrorChain>) -> Void
+    func performTransaction<R>(
+        _ block: @escaping (NSManagedObjectContext) throws -> R,
+        completion: @escaping (Result<R, ErrorChain>) -> Void
     ) {
         let ctx = container.newBackgroundContext()
 
         ctx.perform {
+            let returnValue: R
             do {
-                try block(ctx)
+                returnValue = try block(ctx)
             } catch {
                 ctx.rollback()
                 completion(.failure(error.chain("transaction failed")))
+                return
             }
             do {
                 try ctx.save()
             } catch {
                 ctx.rollback()
                 completion(.failure(error.chain("saving failed")))
+                return
             }
+
+            completion(.success(returnValue))
         }
     }
 }

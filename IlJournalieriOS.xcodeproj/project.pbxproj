@@ -25,6 +25,8 @@
 		A3E202F72ADAB241001D920F /* MoreMessageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202F62ADAB241001D920F /* MoreMessageStorage.swift */; };
 		A3E202F92ADAB691001D920F /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202F82ADAB691001D920F /* DashboardPresenter.swift */; };
 		A3E202FD2ADAB727001D920F /* MainThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202FC2ADAB727001D920F /* MainThread.swift */; };
+		A3E202FF2ADABA6A001D920F /* StylishButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202FE2ADABA6A001D920F /* StylishButton.swift */; };
+		A3E203012ADABABA001D920F /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E203002ADABABA001D920F /* UIColor+colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		A3E202F62ADAB241001D920F /* MoreMessageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreMessageStorage.swift; sourceTree = "<group>"; };
 		A3E202F82ADAB691001D920F /* DashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
 		A3E202FC2ADAB727001D920F /* MainThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainThread.swift; sourceTree = "<group>"; };
+		A3E202FE2ADABA6A001D920F /* StylishButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylishButton.swift; sourceTree = "<group>"; };
+		A3E203002ADABABA001D920F /* UIColor+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+colors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				A3E202E32ADAA548001D920F /* StylishField.swift */,
+				A3E202FE2ADABA6A001D920F /* StylishButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 				A3E202E62ADAA605001D920F /* UIColor+hex.swift */,
 				A3E202F22ADAB103001D920F /* ErrorChain.swift */,
 				A3E202FC2ADAB727001D920F /* MainThread.swift */,
+				A3E203002ADABABA001D920F /* UIColor+colors.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -285,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3E202F72ADAB241001D920F /* MoreMessageStorage.swift in Sources */,
+				A3E203012ADABABA001D920F /* UIColor+colors.swift in Sources */,
 				A3E202F12ADAB093001D920F /* MoreMessageService.swift in Sources */,
 				A3E202EA2ADAAD0E001D920F /* CoreDataService.swift in Sources */,
 				A3E202EF2ADAAD74001D920F /* DIContext.swift in Sources */,
@@ -294,6 +301,7 @@
 				A3E202F32ADAB103001D920F /* ErrorChain.swift in Sources */,
 				A3E202C62ADA9FA2001D920F /* AppDelegate.swift in Sources */,
 				A3E202E72ADAA605001D920F /* UIColor+hex.swift in Sources */,
+				A3E202FF2ADABA6A001D920F /* StylishButton.swift in Sources */,
 				A3E202FD2ADAB727001D920F /* MainThread.swift in Sources */,
 				A3E202DC2ADAA003001D920F /* DashboardViewController.swift in Sources */,
 				A3E202F92ADAB691001D920F /* DashboardPresenter.swift in Sources */,

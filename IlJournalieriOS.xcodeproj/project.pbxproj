@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CB1F83EAA6A8B7AAF827067 /* libPods-IlJournalieriOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 149D21DA024D518E3123B98E /* libPods-IlJournalieriOS.a */; };
+		A3E202C62ADA9FA2001D920F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202C52ADA9FA2001D920F /* AppDelegate.swift */; };
+		A3E202CF2ADA9FA3001D920F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E202CE2ADA9FA3001D920F /* Assets.xcassets */; };
+		A3E202D22ADA9FA3001D920F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3E202D02ADA9FA3001D920F /* LaunchScreen.storyboard */; };
+		A3E202DC2ADAA003001D920F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202DB2ADAA003001D920F /* DashboardViewController.swift */; };
+		A3E202DE2ADAA414001D920F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202DD2ADAA414001D920F /* AppCoordinator.swift */; };
+		A3E202E12ADAA470001D920F /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202E02ADAA470001D920F /* DashboardCoordinator.swift */; };
+		A3E202E42ADAA548001D920F /* StylishField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202E32ADAA548001D920F /* StylishField.swift */; };
+		A3E202E72ADAA605001D920F /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202E62ADAA605001D920F /* UIColor+hex.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		149D21DA024D518E3123B98E /* libPods-IlJournalieriOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IlJournalieriOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2544FFED21CD2639E3024BB9 /* Pods-IlJournalieriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlJournalieriOS.release.xcconfig"; path = "Target Support Files/Pods-IlJournalieriOS/Pods-IlJournalieriOS.release.xcconfig"; sourceTree = "<group>"; };
+		854018108CDAA9C729657DCF /* Pods-IlJournalieriOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlJournalieriOS.debug.xcconfig"; path = "Target Support Files/Pods-IlJournalieriOS/Pods-IlJournalieriOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A3E202C22ADA9FA2001D920F /* IlJournalieriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IlJournalieriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3E202C52ADA9FA2001D920F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3E202CE2ADA9FA3001D920F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3E202D12ADA9FA3001D920F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3E202D32ADA9FA3001D920F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3E202DB2ADAA003001D920F /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		A3E202DD2ADAA414001D920F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A3E202E02ADAA470001D920F /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
+		A3E202E32ADAA548001D920F /* StylishField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylishField.swift; sourceTree = "<group>"; };
+		A3E202E62ADAA605001D920F /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3E202BF2ADA9FA2001D920F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CB1F83EAA6A8B7AAF827067 /* libPods-IlJournalieriOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		094AF6606758A97D8761BD38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				854018108CDAA9C729657DCF /* Pods-IlJournalieriOS.debug.xcconfig */,
+				2544FFED21CD2639E3024BB9 /* Pods-IlJournalieriOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		54D7132E3396ECD0B8464A00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				149D21DA024D518E3123B98E /* libPods-IlJournalieriOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3E202B92ADA9FA2001D920F = {
+			isa = PBXGroup;
+			children = (
+				A3E202C42ADA9FA2001D920F /* IlJournalieriOS */,
+				A3E202C32ADA9FA2001D920F /* Products */,
+				094AF6606758A97D8761BD38 /* Pods */,
+				54D7132E3396ECD0B8464A00 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A3E202C32ADA9FA2001D920F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3E202C22ADA9FA2001D920F /* IlJournalieriOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3E202C42ADA9FA2001D920F /* IlJournalieriOS */ = {
+			isa = PBXGroup;
+			children = (
+				A3E202E52ADAA5FD001D920F /* Util */,
+				A3E202E22ADAA53F001D920F /* Views */,
+				A3E202DF2ADAA41D001D920F /* Resources */,
+				A3E202D92ADA9FEC001D920F /* Flows */,
+				A3E202C52ADA9FA2001D920F /* AppDelegate.swift */,
+				A3E202DD2ADAA414001D920F /* AppCoordinator.swift */,
+			);
+			path = IlJournalieriOS;
+			sourceTree = "<group>";
+		};
+		A3E202D92ADA9FEC001D920F /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				A3E202DA2ADA9FF8001D920F /* Dashboard */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		A3E202DA2ADA9FF8001D920F /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A3E202DB2ADAA003001D920F /* DashboardViewController.swift */,
+				A3E202E02ADAA470001D920F /* DashboardCoordinator.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		A3E202DF2ADAA41D001D920F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3E202CE2ADA9FA3001D920F /* Assets.xcassets */,
+				A3E202D02ADA9FA3001D920F /* LaunchScreen.storyboard */,
+				A3E202D32ADA9FA3001D920F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3E202E22ADAA53F001D920F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3E202E32ADAA548001D920F /* StylishField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A3E202E52ADAA5FD001D920F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A3E202E62ADAA605001D920F /* UIColor+hex.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3E202C12ADA9FA2001D920F /* IlJournalieriOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3E202D62ADA9FA3001D920F /* Build configuration list for PBXNativeTarget "IlJournalieriOS" */;
+			buildPhases = (
+				F352D300F1CF6F295F885527 /* [CP] Check Pods Manifest.lock */,
+				A3E202BE2ADA9FA2001D920F /* Sources */,
+				A3E202BF2ADA9FA2001D920F /* Frameworks */,
+				A3E202C02ADA9FA2001D920F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IlJournalieriOS;
+			productName = IlJournalieriOS;
+			productReference = A3E202C22ADA9FA2001D920F /* IlJournalieriOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3E202BA2ADA9FA2001D920F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					A3E202C12ADA9FA2001D920F = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = A3E202BD2ADA9FA2001D920F /* Build configuration list for PBXProject "IlJournalieriOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3E202B92ADA9FA2001D920F;
+			productRefGroup = A3E202C32ADA9FA2001D920F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3E202C12ADA9FA2001D920F /* IlJournalieriOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3E202C02ADA9FA2001D920F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E202D22ADA9FA3001D920F /* LaunchScreen.storyboard in Resources */,
+				A3E202CF2ADA9FA3001D920F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F352D300F1CF6F295F885527 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IlJournalieriOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3E202BE2ADA9FA2001D920F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E202DE2ADAA414001D920F /* AppCoordinator.swift in Sources */,
+				A3E202E12ADAA470001D920F /* DashboardCoordinator.swift in Sources */,
+				A3E202C62ADA9FA2001D920F /* AppDelegate.swift in Sources */,
+				A3E202E72ADAA605001D920F /* UIColor+hex.swift in Sources */,
+				A3E202DC2ADAA003001D920F /* DashboardViewController.swift in Sources */,
+				A3E202E42ADAA548001D920F /* StylishField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A3E202D02ADA9FA3001D920F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3E202D12ADA9FA3001D920F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3E202D42ADA9FA3001D920F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3E202D52ADA9FA3001D920F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3E202D72ADA9FA3001D920F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 854018108CDAA9C729657DCF /* Pods-IlJournalieriOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IlJournalieriOS/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.caroline.weisberg.IlJournalieriOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3E202D82ADA9FA3001D920F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2544FFED21CD2639E3024BB9 /* Pods-IlJournalieriOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IlJournalieriOS/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.caroline.weisberg.IlJournalieriOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3E202BD2ADA9FA2001D920F /* Build configuration list for PBXProject "IlJournalieriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E202D42ADA9FA3001D920F /* Debug */,
+				A3E202D52ADA9FA3001D920F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3E202D62ADA9FA3001D920F /* Build configuration list for PBXNativeTarget "IlJournalieriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E202D72ADA9FA3001D920F /* Debug */,
+				A3E202D82ADA9FA3001D920F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3E202BA2ADA9FA2001D920F /* Project object */;
+}

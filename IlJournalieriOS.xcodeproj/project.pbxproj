@@ -16,6 +16,9 @@
 		A3E202E12ADAA470001D920F /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202E02ADAA470001D920F /* DashboardCoordinator.swift */; };
 		A3E202E42ADAA548001D920F /* StylishField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202E32ADAA548001D920F /* StylishField.swift */; };
 		A3E202E72ADAA605001D920F /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202E62ADAA605001D920F /* UIColor+hex.swift */; };
+		A3E202EA2ADAAD0E001D920F /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202E92ADAAD0E001D920F /* CoreDataService.swift */; };
+		A3E202ED2ADAAD31001D920F /* IlJournalieriOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3E202EB2ADAAD31001D920F /* IlJournalieriOS.xcdatamodeld */; };
+		A3E202EF2ADAAD74001D920F /* DIContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202EE2ADAAD74001D920F /* DIContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		A3E202E02ADAA470001D920F /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
 		A3E202E32ADAA548001D920F /* StylishField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylishField.swift; sourceTree = "<group>"; };
 		A3E202E62ADAA605001D920F /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		A3E202E92ADAAD0E001D920F /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		A3E202EC2ADAAD31001D920F /* IlJournalieriOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IlJournalieriOS.xcdatamodel; sourceTree = "<group>"; };
+		A3E202EE2ADAAD74001D920F /* DIContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 		A3E202C42ADA9FA2001D920F /* IlJournalieriOS */ = {
 			isa = PBXGroup;
 			children = (
+				A3E202E82ADAAD06001D920F /* Services */,
 				A3E202E52ADAA5FD001D920F /* Util */,
 				A3E202E22ADAA53F001D920F /* Views */,
 				A3E202DF2ADAA41D001D920F /* Resources */,
@@ -135,6 +142,16 @@
 				A3E202E62ADAA605001D920F /* UIColor+hex.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		A3E202E82ADAAD06001D920F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A3E202E92ADAAD0E001D920F /* CoreDataService.swift */,
+				A3E202EB2ADAAD31001D920F /* IlJournalieriOS.xcdatamodeld */,
+				A3E202EE2ADAAD74001D920F /* DIContext.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,12 +250,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E202EA2ADAAD0E001D920F /* CoreDataService.swift in Sources */,
+				A3E202EF2ADAAD74001D920F /* DIContext.swift in Sources */,
 				A3E202DE2ADAA414001D920F /* AppCoordinator.swift in Sources */,
 				A3E202E12ADAA470001D920F /* DashboardCoordinator.swift in Sources */,
 				A3E202C62ADA9FA2001D920F /* AppDelegate.swift in Sources */,
 				A3E202E72ADAA605001D920F /* UIColor+hex.swift in Sources */,
 				A3E202DC2ADAA003001D920F /* DashboardViewController.swift in Sources */,
 				A3E202E42ADAA548001D920F /* StylishField.swift in Sources */,
+				A3E202ED2ADAAD31001D920F /* IlJournalieriOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +468,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A3E202EB2ADAAD31001D920F /* IlJournalieriOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A3E202EC2ADAAD31001D920F /* IlJournalieriOS.xcdatamodel */,
+			);
+			currentVersion = A3E202EC2ADAAD31001D920F /* IlJournalieriOS.xcdatamodel */;
+			path = IlJournalieriOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A3E202BA2ADA9FA2001D920F /* Project object */;
 }

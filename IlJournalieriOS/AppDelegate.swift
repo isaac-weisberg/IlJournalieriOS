@@ -13,8 +13,17 @@ import SnapKit
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
 
-        appCoordinator = AppCoordinator(window: window)
-        appCoordinator.start()
+        let launchScreenController = UIStoryboard(
+            name: "LaunchScreen",
+            bundle: .main
+        ).instantiateInitialViewController()!
+
+        window.rootViewController = launchScreenController
+
+        DIContext.create { [self] diContext in
+            appCoordinator = AppCoordinator(window: window, di: diContext)
+            appCoordinator.start()
+        }
 
         window.makeKeyAndVisible()
 

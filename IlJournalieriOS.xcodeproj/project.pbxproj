@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55E914F5AD9A09E4ECD62CEE /* libPods-IlJournalieriOS-IlJournalieriOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF507CD961F9490A4C0F537 /* libPods-IlJournalieriOS-IlJournalieriOSTests.a */; };
 		9CB1F83EAA6A8B7AAF827067 /* libPods-IlJournalieriOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 149D21DA024D518E3123B98E /* libPods-IlJournalieriOS.a */; };
 		A3E202C62ADA9FA2001D920F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202C52ADA9FA2001D920F /* AppDelegate.swift */; };
 		A3E202CF2ADA9FA3001D920F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E202CE2ADA9FA3001D920F /* Assets.xcassets */; };
@@ -27,11 +28,28 @@
 		A3E202FD2ADAB727001D920F /* MainThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202FC2ADAB727001D920F /* MainThread.swift */; };
 		A3E202FF2ADABA6A001D920F /* StylishButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202FE2ADABA6A001D920F /* StylishButton.swift */; };
 		A3E203012ADABABA001D920F /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E203002ADABABA001D920F /* UIColor+colors.swift */; };
+		A3EC095E2ADEC85B002102AD /* DashboardMassiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC095D2ADEC85B002102AD /* DashboardMassiveViewController.swift */; };
+		A3EC096D2ADEE9B4002102AD /* MoreMessageServiceManualTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC096C2ADEE9B4002102AD /* MoreMessageServiceManualTests.swift */; };
+		A3EC09722ADEEAB9002102AD /* DateServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC09712ADEEAB9002102AD /* DateServiceMock.swift */; };
+		A3EC09742ADEEB31002102AD /* MoreMessageStorageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC09732ADEEB31002102AD /* MoreMessageStorageMock.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3EC09672ADEE96E002102AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3E202BA2ADA9FA2001D920F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3E202C12ADA9FA2001D920F;
+			remoteInfo = IlJournalieriOS;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		149D21DA024D518E3123B98E /* libPods-IlJournalieriOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IlJournalieriOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2544FFED21CD2639E3024BB9 /* Pods-IlJournalieriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlJournalieriOS.release.xcconfig"; path = "Target Support Files/Pods-IlJournalieriOS/Pods-IlJournalieriOS.release.xcconfig"; sourceTree = "<group>"; };
+		278D607B8A35235769859113 /* Pods-IlJournalieriOS-IlJournalieriOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlJournalieriOS-IlJournalieriOSTests.release.xcconfig"; path = "Target Support Files/Pods-IlJournalieriOS-IlJournalieriOSTests/Pods-IlJournalieriOS-IlJournalieriOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		3A664860507497E62B970EB4 /* Pods-IlJournalieriOS-IlJournalieriOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlJournalieriOS-IlJournalieriOSTests.debug.xcconfig"; path = "Target Support Files/Pods-IlJournalieriOS-IlJournalieriOSTests/Pods-IlJournalieriOS-IlJournalieriOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3EF507CD961F9490A4C0F537 /* libPods-IlJournalieriOS-IlJournalieriOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IlJournalieriOS-IlJournalieriOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		854018108CDAA9C729657DCF /* Pods-IlJournalieriOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlJournalieriOS.debug.xcconfig"; path = "Target Support Files/Pods-IlJournalieriOS/Pods-IlJournalieriOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A3E202C22ADA9FA2001D920F /* IlJournalieriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IlJournalieriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E202C52ADA9FA2001D920F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +72,11 @@
 		A3E202FC2ADAB727001D920F /* MainThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainThread.swift; sourceTree = "<group>"; };
 		A3E202FE2ADABA6A001D920F /* StylishButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylishButton.swift; sourceTree = "<group>"; };
 		A3E203002ADABABA001D920F /* UIColor+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+colors.swift"; sourceTree = "<group>"; };
+		A3EC095D2ADEC85B002102AD /* DashboardMassiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardMassiveViewController.swift; sourceTree = "<group>"; };
+		A3EC09632ADEE96E002102AD /* IlJournalieriOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IlJournalieriOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3EC096C2ADEE9B4002102AD /* MoreMessageServiceManualTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreMessageServiceManualTests.swift; sourceTree = "<group>"; };
+		A3EC09712ADEEAB9002102AD /* DateServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateServiceMock.swift; sourceTree = "<group>"; };
+		A3EC09732ADEEB31002102AD /* MoreMessageStorageMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreMessageStorageMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +88,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3EC09602ADEE96E002102AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E914F5AD9A09E4ECD62CEE /* libPods-IlJournalieriOS-IlJournalieriOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +104,8 @@
 			children = (
 				854018108CDAA9C729657DCF /* Pods-IlJournalieriOS.debug.xcconfig */,
 				2544FFED21CD2639E3024BB9 /* Pods-IlJournalieriOS.release.xcconfig */,
+				3A664860507497E62B970EB4 /* Pods-IlJournalieriOS-IlJournalieriOSTests.debug.xcconfig */,
+				278D607B8A35235769859113 /* Pods-IlJournalieriOS-IlJournalieriOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -81,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				149D21DA024D518E3123B98E /* libPods-IlJournalieriOS.a */,
+				3EF507CD961F9490A4C0F537 /* libPods-IlJournalieriOS-IlJournalieriOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				A3E202C42ADA9FA2001D920F /* IlJournalieriOS */,
+				A3EC09642ADEE96E002102AD /* IlJournalieriOSTests */,
 				A3E202C32ADA9FA2001D920F /* Products */,
 				094AF6606758A97D8761BD38 /* Pods */,
 				54D7132E3396ECD0B8464A00 /* Frameworks */,
@@ -99,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				A3E202C22ADA9FA2001D920F /* IlJournalieriOS.app */,
+				A3EC09632ADEE96E002102AD /* IlJournalieriOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +167,7 @@
 				A3E202DB2ADAA003001D920F /* DashboardViewController.swift */,
 				A3E202E02ADAA470001D920F /* DashboardCoordinator.swift */,
 				A3E202F82ADAB691001D920F /* DashboardPresenter.swift */,
+				A3EC095D2ADEC85B002102AD /* DashboardMassiveViewController.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -194,6 +231,24 @@
 			path = MoreMessage;
 			sourceTree = "<group>";
 		};
+		A3EC09642ADEE96E002102AD /* IlJournalieriOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3EC09702ADEEAAD002102AD /* CustomMocks */,
+				A3EC096C2ADEE9B4002102AD /* MoreMessageServiceManualTests.swift */,
+			);
+			path = IlJournalieriOSTests;
+			sourceTree = "<group>";
+		};
+		A3EC09702ADEEAAD002102AD /* CustomMocks */ = {
+			isa = PBXGroup;
+			children = (
+				A3EC09712ADEEAB9002102AD /* DateServiceMock.swift */,
+				A3EC09732ADEEB31002102AD /* MoreMessageStorageMock.swift */,
+			);
+			path = CustomMocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,6 +270,25 @@
 			productReference = A3E202C22ADA9FA2001D920F /* IlJournalieriOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A3EC09622ADEE96E002102AD /* IlJournalieriOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3EC09692ADEE96E002102AD /* Build configuration list for PBXNativeTarget "IlJournalieriOSTests" */;
+			buildPhases = (
+				1F781BAC68C676AEC1045D13 /* [CP] Check Pods Manifest.lock */,
+				A3EC095F2ADEE96E002102AD /* Sources */,
+				A3EC09602ADEE96E002102AD /* Frameworks */,
+				A3EC09612ADEE96E002102AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3EC09682ADEE96E002102AD /* PBXTargetDependency */,
+			);
+			name = IlJournalieriOSTests;
+			productName = IlJournalieriOSTests;
+			productReference = A3EC09632ADEE96E002102AD /* IlJournalieriOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -227,6 +301,10 @@
 				TargetAttributes = {
 					A3E202C12ADA9FA2001D920F = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					A3EC09622ADEE96E002102AD = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = A3E202C12ADA9FA2001D920F;
 					};
 				};
 			};
@@ -244,6 +322,7 @@
 			projectRoot = "";
 			targets = (
 				A3E202C12ADA9FA2001D920F /* IlJournalieriOS */,
+				A3EC09622ADEE96E002102AD /* IlJournalieriOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,9 +337,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3EC09612ADEE96E002102AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1F781BAC68C676AEC1045D13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IlJournalieriOS-IlJournalieriOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F352D300F1CF6F295F885527 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,13 +412,32 @@
 				A3E202FF2ADABA6A001D920F /* StylishButton.swift in Sources */,
 				A3E202FD2ADAB727001D920F /* MainThread.swift in Sources */,
 				A3E202DC2ADAA003001D920F /* DashboardViewController.swift in Sources */,
+				A3EC095E2ADEC85B002102AD /* DashboardMassiveViewController.swift in Sources */,
 				A3E202F92ADAB691001D920F /* DashboardPresenter.swift in Sources */,
 				A3E202E42ADAA548001D920F /* StylishField.swift in Sources */,
 				A3E202ED2ADAAD31001D920F /* IlJournalieriOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3EC095F2ADEE96E002102AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3EC09742ADEEB31002102AD /* MoreMessageStorageMock.swift in Sources */,
+				A3EC09722ADEEAB9002102AD /* DateServiceMock.swift in Sources */,
+				A3EC096D2ADEE9B4002102AD /* MoreMessageServiceManualTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3EC09682ADEE96E002102AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3E202C12ADA9FA2001D920F /* IlJournalieriOS */;
+			targetProxy = A3EC09672ADEE96E002102AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A3E202D02ADA9FA3001D920F /* LaunchScreen.storyboard */ = {
@@ -494,6 +621,42 @@
 			};
 			name = Release;
 		};
+		A3EC096A2ADEE96E002102AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A664860507497E62B970EB4 /* Pods-IlJournalieriOS-IlJournalieriOSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.caroline.weisberg.IlJournalieriOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IlJournalieriOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IlJournalieriOS";
+			};
+			name = Debug;
+		};
+		A3EC096B2ADEE96E002102AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 278D607B8A35235769859113 /* Pods-IlJournalieriOS-IlJournalieriOSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.caroline.weisberg.IlJournalieriOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IlJournalieriOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IlJournalieriOS";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -511,6 +674,15 @@
 			buildConfigurations = (
 				A3E202D72ADA9FA3001D920F /* Debug */,
 				A3E202D82ADA9FA3001D920F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3EC09692ADEE96E002102AD /* Build configuration list for PBXNativeTarget "IlJournalieriOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3EC096A2ADEE96E002102AD /* Debug */,
+				A3EC096B2ADEE96E002102AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

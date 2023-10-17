@@ -3,4 +3,8 @@ target 'IlJournalieriOS' do
     platform :ios, '12.0'
 
     pod 'SnapKit'
+
+    target 'IlJournalieriOSTests' do
+
+    end
 end

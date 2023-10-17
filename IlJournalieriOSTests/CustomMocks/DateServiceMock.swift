@@ -9,7 +9,7 @@ class DateServiceMock: IDateService {
     }
 
     var currentDateWasCalled = false
-    var currentDate: Date {
+    func getCurrentDate() -> Date {
         currentDateWasCalled = true
 
         return dateToReturn

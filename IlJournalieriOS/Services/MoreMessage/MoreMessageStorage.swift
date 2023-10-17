@@ -5,7 +5,7 @@ struct MoreMessageRecord {
     let message: String
 }
 
-protocol IMoreMessageStorage {
+protocol IMoreMessageStorage: AutoMockable {
     func save(
         _ moreMessage: MoreMessageRecord,
         _ completion: @escaping (Result<Void, ErrorChain>) -> Void

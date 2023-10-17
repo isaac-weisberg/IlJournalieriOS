@@ -1,11 +1,11 @@
 import Foundation
 
-protocol IDateService {
-    var currentDate: Date { get }
+protocol IDateService: AutoMockable {
+    func getCurrentDate() -> Date
 }
 
 class DateService: IDateService {
-    var currentDate: Date {
+    func getCurrentDate() -> Date {
         Date()
     }
 }

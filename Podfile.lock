@@ -1,16 +1,32 @@
 PODS:
+  - Fakery (5.1.0)
+  - Nimble (10.0.0)
+  - Quick (5.0.1)
   - SnapKit (5.6.0)
+  - SwiftDate (6.3.1)
 
 DEPENDENCIES:
+  - Fakery
+  - Nimble
+  - Quick
   - SnapKit
+  - SwiftDate
 
 SPEC REPOS:
   trunk:
+    - Fakery
+    - Nimble
+    - Quick
     - SnapKit
+    - SwiftDate
 
 SPEC CHECKSUMS:
+  Fakery: a90caff00ca5cacde6c161c3eafc72314a03d34d
+  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
+  Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
 
-PODFILE CHECKSUM: 40f6ec2e20b4b1f173b95dce34159b80b636b375
+PODFILE CHECKSUM: a78084b183de13d428ed6a0bbfc8f96fbc36eefd
 
 COCOAPODS: 1.13.0

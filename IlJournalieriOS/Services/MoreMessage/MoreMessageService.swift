@@ -21,7 +21,7 @@ class MoreMessageService: IMoreMessageService {
         _ message: String,
         _ completion: @escaping (Result<Void, ErrorChain>) -> Void
     ) {
-        let date = dateService.currentDate
+        let date = dateService.getCurrentDate()
 
         let moreMessageRecord = MoreMessageRecord(timestamp: date, message: message)
 

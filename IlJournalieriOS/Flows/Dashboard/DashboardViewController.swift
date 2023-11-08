@@ -1,10 +1,14 @@
 import UIKit
 
+private let savedLabelAnimationKey = "savedLabelAnimationKey"
+
 class DashboardViewController: UIViewController {
     let presenter: IDashboardPresenter
     let logSomethingLabel = UILabel(frame: .zero)
     let logMoreField = StylishField()
     let logMoreButton = StylishButton(text: "Log")
+    let savedLabelAnimation = CAKeyframeAnimation(keyPath: "opacity")
+    let savedLabel = UILabel()
 
     init(presenter: IDashboardPresenter) {
         self.presenter = presenter
@@ -48,6 +52,18 @@ class DashboardViewController: UIViewController {
             make.trailing.equalToSuperview().offset(-16)
         }
 
+        savedLabel.text = "Saved..."
+        savedLabel.alpha = 0
+        view.addSubview(savedLabel)
+        savedLabel.snp.makeConstraints { make in
+            make.trailing.equalTo(logMoreButton.snp.leading).offset(-20)
+            make.centerY.equalTo(logMoreButton)
+        }
+
+        savedLabelAnimation.duration = 2
+        savedLabelAnimation.keyTimes = [ 0.0, 0.1, 0.3, 1 ]
+        savedLabelAnimation.values = [ 0.0, 1, 1, 0 ]
+
         logMoreButton.onTap = { [weak self] in
             guard let self else { return }
             self.presenter.addMoreMessage(self.logMoreField.field.text)
@@ -56,6 +72,10 @@ class DashboardViewController: UIViewController {
 }
 
 extension DashboardViewController: IDashboardPresenterDelegate {
+    func tellUserMessageIsSaved() {
+        savedLabel.layer.add(savedLabelAnimation, forKey: savedLabelAnimationKey)
+    }
+
     func clearMoreMessageInput() {
         logMoreField.field.text = ""
     }

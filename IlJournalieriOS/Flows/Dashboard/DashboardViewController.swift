@@ -34,12 +34,14 @@ class DashboardViewController: UIViewController {
             "plz halp",
             "I need water, god, please"
         ].randomElement()!
+        logMoreField.field.accessibilityId = .logMoreField
         view.addSubview(logMoreField)
         logMoreField.snp.makeConstraints { make in
             make.top.equalTo(logSomethingLabel.snp.bottom).offset(8)
             make.leading.trailing.equalToSuperview().inset(16)
         }
 
+        logMoreButton.button.accessibilityId = .logMoreButton
         view.addSubview(logMoreButton)
         logMoreButton.snp.makeConstraints { make in
             make.top.equalTo(logMoreField.snp.bottom).offset(16)
@@ -60,6 +62,8 @@ extension DashboardViewController: IDashboardPresenterDelegate {
 
     func showAlert(_ msg: String) {
         let alertController = UIAlertController(title: msg, message: nil, preferredStyle: .alert)
+
+        alertController.view.accessibilityId = .dashboardAlert
         alertController.addAction(UIAlertAction(title: "Ok", style: .default))
 
         present(alertController, animated: true)

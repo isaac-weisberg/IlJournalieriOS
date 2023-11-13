@@ -54,6 +54,7 @@ class DashboardViewController: UIViewController {
 }
 
 extension DashboardViewController: IDashboardPresenterDelegate {
+
     func clearMoreMessageInput() {
         logMoreField.field.text = ""
     }

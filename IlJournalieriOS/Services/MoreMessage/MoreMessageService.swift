@@ -1,4 +1,4 @@
-protocol IMoreMessageService {
+protocol IMoreMessageService: AutoMockable {
     func addMoreMessage(
         _ message: String,
         _ completion: @escaping (Result<Void, ErrorChain>) -> Void

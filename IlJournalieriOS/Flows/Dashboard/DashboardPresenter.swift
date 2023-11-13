@@ -1,4 +1,4 @@
-protocol IDashboardPresenterDelegate: AnyObject {
+protocol IDashboardPresenterDelegate: AutoMockable {
     func clearMoreMessageInput()
 
     func showAlert(_ msg: String)
@@ -9,7 +9,7 @@ protocol IDashboardPresenter {
 }
 
 class DashboardPresenter: IDashboardPresenter {
-    weak var delegate: IDashboardPresenterDelegate?
+    var delegate: IDashboardPresenterDelegate?
     let moreMessageService: IMoreMessageService
 
     init(

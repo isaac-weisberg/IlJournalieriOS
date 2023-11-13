@@ -35,6 +35,7 @@
 		A3EC09762ADEF4E0002102AD /* MoreMessageServiceQuickSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC09752ADEF4E0002102AD /* MoreMessageServiceQuickSpec.swift */; };
 		A3EC09792ADF0437002102AD /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC09782ADF0437002102AD /* AutoMockable.swift */; };
 		A3EC098A2ADF055F002102AD /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC09892ADF055F002102AD /* AutoMockable.generated.swift */; };
+		A986A3212AFB5C22008BD5BD /* DashbordPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A986A3202AFB5C22008BD5BD /* DashbordPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		A3EC09782ADF0437002102AD /* AutoMockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMockable.swift; sourceTree = "<group>"; };
 		A3EC09872ADF0534002102AD /* AutoMockable.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoMockable.stencil; sourceTree = "<group>"; };
 		A3EC09892ADF055F002102AD /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
+		A986A3202AFB5C22008BD5BD /* DashbordPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashbordPresenterTests.swift; sourceTree = "<group>"; };
 		B3867660AB381987D62D8165 /* Pods_IlJournalieriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlJournalieriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD99950C8C9CDBC45FE2ED0C /* Pods_IlJournalieriOS_IlJournalieriOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlJournalieriOS_IlJournalieriOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -247,6 +249,7 @@
 				A3EC09702ADEEAAD002102AD /* CustomMocks */,
 				A3EC096C2ADEE9B4002102AD /* MoreMessageServiceManualTests.swift */,
 				A3EC09752ADEF4E0002102AD /* MoreMessageServiceQuickSpec.swift */,
+				A986A3202AFB5C22008BD5BD /* DashbordPresenterTests.swift */,
 			);
 			path = IlJournalieriOSTests;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3EC09742ADEEB31002102AD /* MoreMessageStorageMock.swift in Sources */,
+				A986A3212AFB5C22008BD5BD /* DashbordPresenterTests.swift in Sources */,
 				A3EC098A2ADF055F002102AD /* AutoMockable.generated.swift in Sources */,
 				A3EC09722ADEEAB9002102AD /* DateServiceMock.swift in Sources */,
 				A3EC096D2ADEE9B4002102AD /* MoreMessageServiceManualTests.swift in Sources */,

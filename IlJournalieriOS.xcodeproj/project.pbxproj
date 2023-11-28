@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F370D0C8A46C1DE9F3AD732 /* Pods_IlJournalieriOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F198EF3CC114AA1AADD051 /* Pods_IlJournalieriOSTests.framework */; };
+		5C09B76DB21BA970485E59C4 /* Pods_IlJournalieriOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 410A5667A128035A47819575 /* Pods_IlJournalieriOSUITests.framework */; };
 		6940FEE84F66726B29B90FC6 /* Pods_IlJournalieriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3867660AB381987D62D8165 /* Pods_IlJournalieriOS.framework */; };
-		771E5BC9D89FAB5011C5BA19 /* Pods_IlJournalieriOS_IlJournalieriOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD99950C8C9CDBC45FE2ED0C /* Pods_IlJournalieriOS_IlJournalieriOSTests.framework */; };
+		A34088432AFB628100E0AE6C /* IlJournalieriOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34088422AFB628100E0AE6C /* IlJournalieriOSUITests.swift */; };
+		A34088522AFB631500E0AE6C /* IlJournalierUITestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34088512AFB631500E0AE6C /* IlJournalierUITestUtils.swift */; };
+		A34088562AFB632200E0AE6C /* libIlJournalierUITestUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A340884F2AFB631500E0AE6C /* libIlJournalierUITestUtils.a */; };
+		A340885A2AFB635800E0AE6C /* UIView+accessibilityId.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34088592AFB635800E0AE6C /* UIView+accessibilityId.swift */; };
+		A340885B2AFB640C00E0AE6C /* libIlJournalierUITestUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A340884F2AFB631500E0AE6C /* libIlJournalierUITestUtils.a */; };
+		A340885D2AFB654E00E0AE6C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A340885C2AFB654E00E0AE6C /* Util.swift */; };
 		A3E202C62ADA9FA2001D920F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E202C52ADA9FA2001D920F /* AppDelegate.swift */; };
 		A3E202CF2ADA9FA3001D920F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E202CE2ADA9FA3001D920F /* Assets.xcassets */; };
 		A3E202D22ADA9FA3001D920F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3E202D02ADA9FA3001D920F /* LaunchScreen.storyboard */; };
@@ -39,6 +46,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A34088462AFB628100E0AE6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3E202BA2ADA9FA2001D920F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3E202C12ADA9FA2001D920F;
+			remoteInfo = IlJournalieriOS;
+		};
+		A34088572AFB632200E0AE6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3E202BA2ADA9FA2001D920F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A340884E2AFB631500E0AE6C;
+			remoteInfo = IlJournalierUITestUtils;
+		};
 		A3EC09672ADEE96E002102AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A3E202BA2ADA9FA2001D920F /* Project object */;
@@ -48,11 +69,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A340884D2AFB631500E0AE6C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0D02B7FBED5BD55F4FC4FB31 /* Pods-IlJournalieriOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlJournalieriOSTests.debug.xcconfig"; path = "Target Support Files/Pods-IlJournalieriOSTests/Pods-IlJournalieriOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		215C9B1183701AAEAC824A1C /* Pods-IlJournalieriOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlJournalieriOSTests.release.xcconfig"; path = "Target Support Files/Pods-IlJournalieriOSTests/Pods-IlJournalieriOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		2544FFED21CD2639E3024BB9 /* Pods-IlJournalieriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlJournalieriOS.release.xcconfig"; path = "Target Support Files/Pods-IlJournalieriOS/Pods-IlJournalieriOS.release.xcconfig"; sourceTree = "<group>"; };
 		278D607B8A35235769859113 /* Pods-IlJournalieriOS-IlJournalieriOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlJournalieriOS-IlJournalieriOSTests.release.xcconfig"; path = "Target Support Files/Pods-IlJournalieriOS-IlJournalieriOSTests/Pods-IlJournalieriOS-IlJournalieriOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A664860507497E62B970EB4 /* Pods-IlJournalieriOS-IlJournalieriOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlJournalieriOS-IlJournalieriOSTests.debug.xcconfig"; path = "Target Support Files/Pods-IlJournalieriOS-IlJournalieriOSTests/Pods-IlJournalieriOS-IlJournalieriOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		410A5667A128035A47819575 /* Pods_IlJournalieriOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlJournalieriOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		854018108CDAA9C729657DCF /* Pods-IlJournalieriOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlJournalieriOS.debug.xcconfig"; path = "Target Support Files/Pods-IlJournalieriOS/Pods-IlJournalieriOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A34088402AFB628100E0AE6C /* IlJournalieriOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IlJournalieriOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34088422AFB628100E0AE6C /* IlJournalieriOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlJournalieriOSUITests.swift; sourceTree = "<group>"; };
+		A340884F2AFB631500E0AE6C /* libIlJournalierUITestUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIlJournalierUITestUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34088512AFB631500E0AE6C /* IlJournalierUITestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlJournalierUITestUtils.swift; sourceTree = "<group>"; };
+		A34088592AFB635800E0AE6C /* UIView+accessibilityId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+accessibilityId.swift"; sourceTree = "<group>"; };
+		A340885C2AFB654E00E0AE6C /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		A3E202C22ADA9FA2001D920F /* IlJournalieriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IlJournalieriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E202C52ADA9FA2001D920F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3E202CE2ADA9FA3001D920F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,15 +127,34 @@
 		A3EC09892ADF055F002102AD /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
 		A986A3202AFB5C22008BD5BD /* DashbordPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashbordPresenterTests.swift; sourceTree = "<group>"; };
 		B3867660AB381987D62D8165 /* Pods_IlJournalieriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlJournalieriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD99950C8C9CDBC45FE2ED0C /* Pods_IlJournalieriOS_IlJournalieriOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlJournalieriOS_IlJournalieriOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C375935F10A223966C980ABB /* Pods-IlJournalieriOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlJournalieriOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-IlJournalieriOSUITests/Pods-IlJournalieriOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7F198EF3CC114AA1AADD051 /* Pods_IlJournalieriOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlJournalieriOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC610DF2EEFE18F7D39B0D7C /* Pods-IlJournalieriOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlJournalieriOSUITests.release.xcconfig"; path = "Target Support Files/Pods-IlJournalieriOSUITests/Pods-IlJournalieriOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A340883D2AFB628100E0AE6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A340885B2AFB640C00E0AE6C /* libIlJournalierUITestUtils.a in Frameworks */,
+				5C09B76DB21BA970485E59C4 /* Pods_IlJournalieriOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A340884C2AFB631500E0AE6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3E202BF2ADA9FA2001D920F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6940FEE84F66726B29B90FC6 /* Pods_IlJournalieriOS.framework in Frameworks */,
+				A34088562AFB632200E0AE6C /* libIlJournalierUITestUtils.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				771E5BC9D89FAB5011C5BA19 /* Pods_IlJournalieriOS_IlJournalieriOSTests.framework in Frameworks */,
+				0F370D0C8A46C1DE9F3AD732 /* Pods_IlJournalieriOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +176,10 @@
 				2544FFED21CD2639E3024BB9 /* Pods-IlJournalieriOS.release.xcconfig */,
 				3A664860507497E62B970EB4 /* Pods-IlJournalieriOS-IlJournalieriOSTests.debug.xcconfig */,
 				278D607B8A35235769859113 /* Pods-IlJournalieriOS-IlJournalieriOSTests.release.xcconfig */,
+				0D02B7FBED5BD55F4FC4FB31 /* Pods-IlJournalieriOSTests.debug.xcconfig */,
+				215C9B1183701AAEAC824A1C /* Pods-IlJournalieriOSTests.release.xcconfig */,
+				C375935F10A223966C980ABB /* Pods-IlJournalieriOSUITests.debug.xcconfig */,
+				EC610DF2EEFE18F7D39B0D7C /* Pods-IlJournalieriOSUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -123,9 +188,27 @@
 			isa = PBXGroup;
 			children = (
 				B3867660AB381987D62D8165 /* Pods_IlJournalieriOS.framework */,
-				FD99950C8C9CDBC45FE2ED0C /* Pods_IlJournalieriOS_IlJournalieriOSTests.framework */,
+				C7F198EF3CC114AA1AADD051 /* Pods_IlJournalieriOSTests.framework */,
+				410A5667A128035A47819575 /* Pods_IlJournalieriOSUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A34088412AFB628100E0AE6C /* IlJournalieriOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A34088422AFB628100E0AE6C /* IlJournalieriOSUITests.swift */,
+				A340885C2AFB654E00E0AE6C /* Util.swift */,
+			);
+			path = IlJournalieriOSUITests;
+			sourceTree = "<group>";
+		};
+		A34088502AFB631500E0AE6C /* IlJournalierUITestUtils */ = {
+			isa = PBXGroup;
+			children = (
+				A34088512AFB631500E0AE6C /* IlJournalierUITestUtils.swift */,
+			);
+			path = IlJournalierUITestUtils;
 			sourceTree = "<group>";
 		};
 		A3E202B92ADA9FA2001D920F = {
@@ -133,6 +216,8 @@
 			children = (
 				A3E202C42ADA9FA2001D920F /* IlJournalieriOS */,
 				A3EC09642ADEE96E002102AD /* IlJournalieriOSTests */,
+				A34088412AFB628100E0AE6C /* IlJournalieriOSUITests */,
+				A34088502AFB631500E0AE6C /* IlJournalierUITestUtils */,
 				A3E202C32ADA9FA2001D920F /* Products */,
 				094AF6606758A97D8761BD38 /* Pods */,
 				54D7132E3396ECD0B8464A00 /* Frameworks */,
@@ -144,6 +229,8 @@
 			children = (
 				A3E202C22ADA9FA2001D920F /* IlJournalieriOS.app */,
 				A3EC09632ADEE96E002102AD /* IlJournalieriOSTests.xctest */,
+				A34088402AFB628100E0AE6C /* IlJournalieriOSUITests.xctest */,
+				A340884F2AFB631500E0AE6C /* libIlJournalierUITestUtils.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,6 +295,7 @@
 				A3E202FC2ADAB727001D920F /* MainThread.swift */,
 				A3E203002ADABABA001D920F /* UIColor+colors.swift */,
 				A3EC09782ADF0437002102AD /* AutoMockable.swift */,
+				A34088592AFB635800E0AE6C /* UIView+accessibilityId.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -282,6 +370,43 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A340883F2AFB628100E0AE6C /* IlJournalieriOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A340884A2AFB628100E0AE6C /* Build configuration list for PBXNativeTarget "IlJournalieriOSUITests" */;
+			buildPhases = (
+				6CFAD5A3E034D46A16706871 /* [CP] Check Pods Manifest.lock */,
+				A340883C2AFB628100E0AE6C /* Sources */,
+				A340883D2AFB628100E0AE6C /* Frameworks */,
+				A340883E2AFB628100E0AE6C /* Resources */,
+				7329BCCF9B362D4F3A1F1D15 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A34088472AFB628100E0AE6C /* PBXTargetDependency */,
+			);
+			name = IlJournalieriOSUITests;
+			productName = IlJournalieriOSUITests;
+			productReference = A34088402AFB628100E0AE6C /* IlJournalieriOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A340884E2AFB631500E0AE6C /* IlJournalierUITestUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A34088532AFB631500E0AE6C /* Build configuration list for PBXNativeTarget "IlJournalierUITestUtils" */;
+			buildPhases = (
+				A340884B2AFB631500E0AE6C /* Sources */,
+				A340884C2AFB631500E0AE6C /* Frameworks */,
+				A340884D2AFB631500E0AE6C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IlJournalierUITestUtils;
+			productName = IlJournalierUITestUtils;
+			productReference = A340884F2AFB631500E0AE6C /* libIlJournalierUITestUtils.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		A3E202C12ADA9FA2001D920F /* IlJournalieriOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3E202D62ADA9FA3001D920F /* Build configuration list for PBXNativeTarget "IlJournalieriOS" */;
@@ -295,6 +420,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A34088582AFB632200E0AE6C /* PBXTargetDependency */,
 			);
 			name = IlJournalieriOS;
 			productName = IlJournalieriOS;
@@ -305,8 +431,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3EC09692ADEE96E002102AD /* Build configuration list for PBXNativeTarget "IlJournalieriOSTests" */;
 			buildPhases = (
-				A3EC09772ADF02ED002102AD /* Sourcery */,
 				1F781BAC68C676AEC1045D13 /* [CP] Check Pods Manifest.lock */,
+				A3EC09772ADF02ED002102AD /* Sourcery */,
 				A3EC095F2ADEE96E002102AD /* Sources */,
 				A3EC09602ADEE96E002102AD /* Frameworks */,
 				A3EC09612ADEE96E002102AD /* Resources */,
@@ -332,6 +458,13 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					A340883F2AFB628100E0AE6C = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = A3E202C12ADA9FA2001D920F;
+					};
+					A340884E2AFB631500E0AE6C = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					A3E202C12ADA9FA2001D920F = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -356,11 +489,20 @@
 			targets = (
 				A3E202C12ADA9FA2001D920F /* IlJournalieriOS */,
 				A3EC09622ADEE96E002102AD /* IlJournalieriOSTests */,
+				A340883F2AFB628100E0AE6C /* IlJournalieriOSUITests */,
+				A340884E2AFB631500E0AE6C /* IlJournalierUITestUtils */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A340883E2AFB628100E0AE6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3E202C02ADA9FA2001D920F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,11 +554,50 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IlJournalieriOS-IlJournalieriOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-IlJournalieriOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CFAD5A3E034D46A16706871 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IlJournalieriOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7329BCCF9B362D4F3A1F1D15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IlJournalieriOSUITests/Pods-IlJournalieriOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IlJournalieriOSUITests/Pods-IlJournalieriOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IlJournalieriOSUITests/Pods-IlJournalieriOSUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A3EC09772ADF02ED002102AD /* Sourcery */ = {
@@ -432,6 +613,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(SRCROOT)/IlJournalieriOSTests/SourceryGenerated/AutoMockable.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -443,15 +625,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IlJournalieriOS-IlJournalieriOSTests/Pods-IlJournalieriOS-IlJournalieriOSTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-IlJournalieriOSTests/Pods-IlJournalieriOSTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IlJournalieriOS-IlJournalieriOSTests/Pods-IlJournalieriOS-IlJournalieriOSTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-IlJournalieriOSTests/Pods-IlJournalieriOSTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IlJournalieriOS-IlJournalieriOSTests/Pods-IlJournalieriOS-IlJournalieriOSTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IlJournalieriOSTests/Pods-IlJournalieriOSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F352D300F1CF6F295F885527 /* [CP] Check Pods Manifest.lock */ = {
@@ -479,10 +661,28 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A340883C2AFB628100E0AE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34088432AFB628100E0AE6C /* IlJournalieriOSUITests.swift in Sources */,
+				A340885D2AFB654E00E0AE6C /* Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A340884B2AFB631500E0AE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34088522AFB631500E0AE6C /* IlJournalierUITestUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3E202BE2ADA9FA2001D920F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A340885A2AFB635800E0AE6C /* UIView+accessibilityId.swift in Sources */,
 				A3E202F72ADAB241001D920F /* MoreMessageStorage.swift in Sources */,
 				A3E203012ADABABA001D920F /* UIColor+colors.swift in Sources */,
 				A3E202F12ADAB093001D920F /* MoreMessageService.swift in Sources */,
@@ -521,6 +721,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A34088472AFB628100E0AE6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3E202C12ADA9FA2001D920F /* IlJournalieriOS */;
+			targetProxy = A34088462AFB628100E0AE6C /* PBXContainerItemProxy */;
+		};
+		A34088582AFB632200E0AE6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A340884E2AFB631500E0AE6C /* IlJournalierUITestUtils */;
+			targetProxy = A34088572AFB632200E0AE6C /* PBXContainerItemProxy */;
+		};
 		A3EC09682ADEE96E002102AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A3E202C12ADA9FA2001D920F /* IlJournalieriOS */;
@@ -540,6 +750,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A34088482AFB628100E0AE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C375935F10A223966C980ABB /* Pods-IlJournalieriOSUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.caroline.weisberg.IlJournalieriOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IlJournalieriOS;
+			};
+			name = Debug;
+		};
+		A34088492AFB628100E0AE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC610DF2EEFE18F7D39B0D7C /* Pods-IlJournalieriOSUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.caroline.weisberg.IlJournalieriOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IlJournalieriOS;
+			};
+			name = Release;
+		};
+		A34088542AFB631500E0AE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A34088552AFB631500E0AE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A3E202D42ADA9FA3001D920F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -590,7 +858,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -644,7 +912,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -668,7 +936,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -696,7 +963,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -712,7 +978,7 @@
 		};
 		A3EC096A2ADEE96E002102AD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A664860507497E62B970EB4 /* Pods-IlJournalieriOS-IlJournalieriOSTests.debug.xcconfig */;
+			baseConfigurationReference = 0D02B7FBED5BD55F4FC4FB31 /* Pods-IlJournalieriOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -730,7 +996,7 @@
 		};
 		A3EC096B2ADEE96E002102AD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 278D607B8A35235769859113 /* Pods-IlJournalieriOS-IlJournalieriOSTests.release.xcconfig */;
+			baseConfigurationReference = 215C9B1183701AAEAC824A1C /* Pods-IlJournalieriOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -749,6 +1015,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A340884A2AFB628100E0AE6C /* Build configuration list for PBXNativeTarget "IlJournalieriOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A34088482AFB628100E0AE6C /* Debug */,
+				A34088492AFB628100E0AE6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A34088532AFB631500E0AE6C /* Build configuration list for PBXNativeTarget "IlJournalierUITestUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A34088542AFB631500E0AE6C /* Debug */,
+				A34088552AFB631500E0AE6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A3E202BD2ADA9FA2001D920F /* Build configuration list for PBXProject "IlJournalieriOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

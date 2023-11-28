@@ -2,6 +2,8 @@ protocol IDashboardPresenterDelegate: AutoMockable {
     func clearMoreMessageInput()
 
     func showAlert(_ msg: String)
+
+    func tellUserMessageIsSaved()
 }
 
 protocol IDashboardPresenter {
@@ -29,6 +31,7 @@ class DashboardPresenter: IDashboardPresenter {
                 switch result {
                 case .success:
                     self?.delegate?.clearMoreMessageInput()
+                    self?.delegate?.tellUserMessageIsSaved()
                 case .failure(let error):
                     self?.delegate?.showAlert(error.msg)
                 }

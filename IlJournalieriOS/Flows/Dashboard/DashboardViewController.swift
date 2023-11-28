@@ -1,10 +1,14 @@
 import UIKit
 
+private let savedLabelAnimationKey = "savedLabelAnimationKey"
+
 class DashboardViewController: UIViewController {
     let presenter: IDashboardPresenter
     let logSomethingLabel = UILabel(frame: .zero)
     let logMoreField = StylishField()
     let logMoreButton = StylishButton(text: "Log")
+    let savedLabelAnimation = CAKeyframeAnimation(keyPath: "opacity")
+    let savedLabel = UILabel()
 
     init(presenter: IDashboardPresenter) {
         self.presenter = presenter
@@ -34,17 +38,31 @@ class DashboardViewController: UIViewController {
             "plz halp",
             "I need water, god, please"
         ].randomElement()!
+        logMoreField.field.accessibilityId = .logMoreField
         view.addSubview(logMoreField)
         logMoreField.snp.makeConstraints { make in
             make.top.equalTo(logSomethingLabel.snp.bottom).offset(8)
             make.leading.trailing.equalToSuperview().inset(16)
         }
 
+        logMoreButton.button.accessibilityId = .logMoreButton
         view.addSubview(logMoreButton)
         logMoreButton.snp.makeConstraints { make in
             make.top.equalTo(logMoreField.snp.bottom).offset(16)
             make.trailing.equalToSuperview().offset(-16)
         }
+
+        savedLabel.text = "Saved..."
+        savedLabel.alpha = 0
+        view.addSubview(savedLabel)
+        savedLabel.snp.makeConstraints { make in
+            make.trailing.equalTo(logMoreButton.snp.leading).offset(-20)
+            make.centerY.equalTo(logMoreButton)
+        }
+
+        savedLabelAnimation.duration = 2
+        savedLabelAnimation.keyTimes = [ 0.0, 0.1, 0.3, 1 ]
+        savedLabelAnimation.values = [ 0.0, 1, 1, 0 ]
 
         logMoreButton.onTap = { [weak self] in
             guard let self else { return }
@@ -54,6 +72,12 @@ class DashboardViewController: UIViewController {
 }
 
 extension DashboardViewController: IDashboardPresenterDelegate {
+<<<<<<< HEAD
+=======
+    func tellUserMessageIsSaved() {
+        savedLabel.layer.add(savedLabelAnimation, forKey: savedLabelAnimationKey)
+    }
+>>>>>>> 8753a2a452ae651f715a472daeec4853f7ad0eeb
 
     func clearMoreMessageInput() {
         logMoreField.field.text = ""
@@ -61,6 +85,8 @@ extension DashboardViewController: IDashboardPresenterDelegate {
 
     func showAlert(_ msg: String) {
         let alertController = UIAlertController(title: msg, message: nil, preferredStyle: .alert)
+
+        alertController.view.accessibilityId = .dashboardAlert
         alertController.addAction(UIAlertAction(title: "Ok", style: .default))
 
         present(alertController, animated: true)
